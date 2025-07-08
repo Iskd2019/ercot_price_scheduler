@@ -22,6 +22,8 @@ stop_event = Event()
 # 所有脚本文件（依次执行）
 scripts = [
     "update_rtd_forecast_live.py",
+    "update_daily_dam_price.py",
+    "update_daily_15_mins_energy_price.py"
 
 ]
 # 脚本执行函数（增加超时控制）
