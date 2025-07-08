@@ -1,0 +1,222 @@
+[
+  {
+    "IntervalEnding": "07/07/2025 13:30:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 31.78
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:30:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 27.88
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:30:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 21.36
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:30:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 26.5
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:35:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 28.82
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:35:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 26.33
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:35:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 21.55
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:35:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 25.45
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:40:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 28.8
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:40:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 26.42
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:40:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 21.72
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:40:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 25.58
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:45:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 28.7
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:45:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 26.45
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:45:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 21.86
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:45:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 25.65
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:50:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 28.86
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:50:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 26.66
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:50:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 22.05
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:50:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 25.88
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:55:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 29.0
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:55:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 26.84
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:55:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 22.22
+  },
+  {
+    "IntervalEnding": "07/07/2025 13:55:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 26.08
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:00:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 29.15
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:00:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 26.97
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:00:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 22.32
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:00:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 26.2
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:05:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 30.59
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:05:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 27.9
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:05:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 22.05
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:05:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 26.95
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:10:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 30.36
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:10:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 27.79
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:10:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 22.12
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:10:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 26.88
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:15:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 30.52
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:15:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 27.91
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:15:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 22.26
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:15:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 26.98
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:20:00",
+    "SettlementPoint": "LZ_HOUSTON",
+    "LMP": 30.5
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:20:00",
+    "SettlementPoint": "LZ_NORTH",
+    "LMP": 27.91
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:20:00",
+    "SettlementPoint": "LZ_SOUTH",
+    "LMP": 22.35
+  },
+  {
+    "IntervalEnding": "07/07/2025 14:20:00",
+    "SettlementPoint": "LZ_WEST",
+    "LMP": 26.99
+  }
+]

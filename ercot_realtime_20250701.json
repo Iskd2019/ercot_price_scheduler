@@ -1,0 +1,506 @@
+[
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0015",
+    "LZ_HOUSTON": "54.79",
+    "LZ_NORTH": "51.41",
+    "LZ_SOUTH": "50.98",
+    "LZ_WEST": "61.35"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0030",
+    "LZ_HOUSTON": "49.16",
+    "LZ_NORTH": "50.16",
+    "LZ_SOUTH": "48.12",
+    "LZ_WEST": "62.45"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0045",
+    "LZ_HOUSTON": "46.25",
+    "LZ_NORTH": "47.30",
+    "LZ_SOUTH": "44.98",
+    "LZ_WEST": "61.64"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0100",
+    "LZ_HOUSTON": "43.48",
+    "LZ_NORTH": "45.01",
+    "LZ_SOUTH": "41.87",
+    "LZ_WEST": "61.66"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0115",
+    "LZ_HOUSTON": "41.81",
+    "LZ_NORTH": "43.32",
+    "LZ_SOUTH": "40.67",
+    "LZ_WEST": "61.29"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0130",
+    "LZ_HOUSTON": "38.87",
+    "LZ_NORTH": "40.19",
+    "LZ_SOUTH": "38.68",
+    "LZ_WEST": "62.36"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0145",
+    "LZ_HOUSTON": "32.01",
+    "LZ_NORTH": "33.29",
+    "LZ_SOUTH": "32.32",
+    "LZ_WEST": "57.97"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0200",
+    "LZ_HOUSTON": "29.77",
+    "LZ_NORTH": "30.95",
+    "LZ_SOUTH": "30.32",
+    "LZ_WEST": "56.75"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0215",
+    "LZ_HOUSTON": "28.46",
+    "LZ_NORTH": "29.42",
+    "LZ_SOUTH": "29.48",
+    "LZ_WEST": "56.58"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0230",
+    "LZ_HOUSTON": "27.65",
+    "LZ_NORTH": "28.26",
+    "LZ_SOUTH": "29.16",
+    "LZ_WEST": "55.43"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0245",
+    "LZ_HOUSTON": "26.63",
+    "LZ_NORTH": "27.10",
+    "LZ_SOUTH": "28.15",
+    "LZ_WEST": "52.11"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0300",
+    "LZ_HOUSTON": "26.99",
+    "LZ_NORTH": "27.51",
+    "LZ_SOUTH": "28.68",
+    "LZ_WEST": "55.21"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0315",
+    "LZ_HOUSTON": "25.99",
+    "LZ_NORTH": "26.58",
+    "LZ_SOUTH": "27.90",
+    "LZ_WEST": "57.95"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0330",
+    "LZ_HOUSTON": "26.40",
+    "LZ_NORTH": "26.99",
+    "LZ_SOUTH": "28.30",
+    "LZ_WEST": "58.24"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0345",
+    "LZ_HOUSTON": "26.15",
+    "LZ_NORTH": "26.75",
+    "LZ_SOUTH": "28.10",
+    "LZ_WEST": "58.72"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0400",
+    "LZ_HOUSTON": "25.30",
+    "LZ_NORTH": "25.87",
+    "LZ_SOUTH": "27.18",
+    "LZ_WEST": "56.44"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0415",
+    "LZ_HOUSTON": "25.89",
+    "LZ_NORTH": "26.45",
+    "LZ_SOUTH": "27.71",
+    "LZ_WEST": "56.54"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0430",
+    "LZ_HOUSTON": "25.29",
+    "LZ_NORTH": "25.88",
+    "LZ_SOUTH": "27.21",
+    "LZ_WEST": "57.66"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0445",
+    "LZ_HOUSTON": "25.45",
+    "LZ_NORTH": "25.93",
+    "LZ_SOUTH": "27.30",
+    "LZ_WEST": "58.81"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0500",
+    "LZ_HOUSTON": "25.60",
+    "LZ_NORTH": "26.09",
+    "LZ_SOUTH": "27.55",
+    "LZ_WEST": "60.77"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0515",
+    "LZ_HOUSTON": "25.44",
+    "LZ_NORTH": "26.11",
+    "LZ_SOUTH": "27.76",
+    "LZ_WEST": "65.53"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0530",
+    "LZ_HOUSTON": "24.15",
+    "LZ_NORTH": "25.07",
+    "LZ_SOUTH": "27.20",
+    "LZ_WEST": "74.51"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0545",
+    "LZ_HOUSTON": "25.67",
+    "LZ_NORTH": "26.73",
+    "LZ_SOUTH": "29.43",
+    "LZ_WEST": "88.77"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0600",
+    "LZ_HOUSTON": "27.90",
+    "LZ_NORTH": "27.89",
+    "LZ_SOUTH": "27.98",
+    "LZ_WEST": "30.19"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0615",
+    "LZ_HOUSTON": "31.26",
+    "LZ_NORTH": "31.21",
+    "LZ_SOUTH": "30.93",
+    "LZ_WEST": "33.42"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0630",
+    "LZ_HOUSTON": "33.00",
+    "LZ_NORTH": "33.10",
+    "LZ_SOUTH": "32.24",
+    "LZ_WEST": "47.80"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0645",
+    "LZ_HOUSTON": "30.31",
+    "LZ_NORTH": "30.59",
+    "LZ_SOUTH": "31.19",
+    "LZ_WEST": "52.60"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0700",
+    "LZ_HOUSTON": "27.53",
+    "LZ_NORTH": "27.87",
+    "LZ_SOUTH": "28.56",
+    "LZ_WEST": "46.07"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0715",
+    "LZ_HOUSTON": "28.80",
+    "LZ_NORTH": "29.62",
+    "LZ_SOUTH": "31.15",
+    "LZ_WEST": "72.85"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0730",
+    "LZ_HOUSTON": "28.84",
+    "LZ_NORTH": "29.72",
+    "LZ_SOUTH": "31.47",
+    "LZ_WEST": "75.73"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0745",
+    "LZ_HOUSTON": "27.76",
+    "LZ_NORTH": "28.55",
+    "LZ_SOUTH": "28.78",
+    "LZ_WEST": "54.41"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0800",
+    "LZ_HOUSTON": "26.83",
+    "LZ_NORTH": "27.89",
+    "LZ_SOUTH": "27.21",
+    "LZ_WEST": "50.88"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0815",
+    "LZ_HOUSTON": "27.98",
+    "LZ_NORTH": "28.02",
+    "LZ_SOUTH": "28.05",
+    "LZ_WEST": "29.52"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0830",
+    "LZ_HOUSTON": "29.95",
+    "LZ_NORTH": "30.01",
+    "LZ_SOUTH": "30.11",
+    "LZ_WEST": "32.86"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0845",
+    "LZ_HOUSTON": "34.05",
+    "LZ_NORTH": "34.53",
+    "LZ_SOUTH": "34.00",
+    "LZ_WEST": "43.67"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0900",
+    "LZ_HOUSTON": "31.34",
+    "LZ_NORTH": "31.63",
+    "LZ_SOUTH": "30.71",
+    "LZ_WEST": "34.47"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0915",
+    "LZ_HOUSTON": "29.82",
+    "LZ_NORTH": "29.99",
+    "LZ_SOUTH": "29.50",
+    "LZ_WEST": "31.21"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0930",
+    "LZ_HOUSTON": "31.71",
+    "LZ_NORTH": "31.21",
+    "LZ_SOUTH": "30.96",
+    "LZ_WEST": "33.36"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "0945",
+    "LZ_HOUSTON": "32.09",
+    "LZ_NORTH": "31.38",
+    "LZ_SOUTH": "31.19",
+    "LZ_WEST": "33.69"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1000",
+    "LZ_HOUSTON": "35.18",
+    "LZ_NORTH": "34.26",
+    "LZ_SOUTH": "34.18",
+    "LZ_WEST": "35.45"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1015",
+    "LZ_HOUSTON": "36.71",
+    "LZ_NORTH": "35.63",
+    "LZ_SOUTH": "34.91",
+    "LZ_WEST": "37.48"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1030",
+    "LZ_HOUSTON": "36.53",
+    "LZ_NORTH": "35.07",
+    "LZ_SOUTH": "35.73",
+    "LZ_WEST": "35.64"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1045",
+    "LZ_HOUSTON": "36.48",
+    "LZ_NORTH": "35.50",
+    "LZ_SOUTH": "35.57",
+    "LZ_WEST": "35.66"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1100",
+    "LZ_HOUSTON": "36.63",
+    "LZ_NORTH": "34.98",
+    "LZ_SOUTH": "35.85",
+    "LZ_WEST": "35.56"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1115",
+    "LZ_HOUSTON": "43.14",
+    "LZ_NORTH": "35.26",
+    "LZ_SOUTH": "30.19",
+    "LZ_WEST": "34.08"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1130",
+    "LZ_HOUSTON": "42.78",
+    "LZ_NORTH": "36.20",
+    "LZ_SOUTH": "31.96",
+    "LZ_WEST": "34.70"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1145",
+    "LZ_HOUSTON": "44.67",
+    "LZ_NORTH": "38.96",
+    "LZ_SOUTH": "31.19",
+    "LZ_WEST": "35.91"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1200",
+    "LZ_HOUSTON": "55.42",
+    "LZ_NORTH": "41.98",
+    "LZ_SOUTH": "32.68",
+    "LZ_WEST": "39.44"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1215",
+    "LZ_HOUSTON": "60.77",
+    "LZ_NORTH": "42.58",
+    "LZ_SOUTH": "29.88",
+    "LZ_WEST": "39.09"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1230",
+    "LZ_HOUSTON": "34.26",
+    "LZ_NORTH": "35.94",
+    "LZ_SOUTH": "24.95",
+    "LZ_WEST": "30.32"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1245",
+    "LZ_HOUSTON": "39.42",
+    "LZ_NORTH": "37.78",
+    "LZ_SOUTH": "24.78",
+    "LZ_WEST": "31.10"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1300",
+    "LZ_HOUSTON": "54.23",
+    "LZ_NORTH": "40.98",
+    "LZ_SOUTH": "27.89",
+    "LZ_WEST": "36.37"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1315",
+    "LZ_HOUSTON": "50.15",
+    "LZ_NORTH": "39.35",
+    "LZ_SOUTH": "26.22",
+    "LZ_WEST": "34.25"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1330",
+    "LZ_HOUSTON": "46.70",
+    "LZ_NORTH": "35.17",
+    "LZ_SOUTH": "27.71",
+    "LZ_WEST": "33.23"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1345",
+    "LZ_HOUSTON": "41.60",
+    "LZ_NORTH": "33.64",
+    "LZ_SOUTH": "26.64",
+    "LZ_WEST": "31.77"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1400",
+    "LZ_HOUSTON": "60.41",
+    "LZ_NORTH": "42.74",
+    "LZ_SOUTH": "30.80",
+    "LZ_WEST": "39.90"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1415",
+    "LZ_HOUSTON": "78.73",
+    "LZ_NORTH": "53.29",
+    "LZ_SOUTH": "35.45",
+    "LZ_WEST": "49.06"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1430",
+    "LZ_HOUSTON": "72.95",
+    "LZ_NORTH": "52.96",
+    "LZ_SOUTH": "32.67",
+    "LZ_WEST": "48.27"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1445",
+    "LZ_HOUSTON": "106.12",
+    "LZ_NORTH": "72.54",
+    "LZ_SOUTH": "42.97",
+    "LZ_WEST": "65.66"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1500",
+    "LZ_HOUSTON": "108.60",
+    "LZ_NORTH": "80.32",
+    "LZ_SOUTH": "45.73",
+    "LZ_WEST": "69.17"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1515",
+    "LZ_HOUSTON": "73.42",
+    "LZ_NORTH": "51.22",
+    "LZ_SOUTH": "39.09",
+    "LZ_WEST": "48.28"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1530",
+    "LZ_HOUSTON": "77.23",
+    "LZ_NORTH": "59.78",
+    "LZ_SOUTH": "50.69",
+    "LZ_WEST": "57.64"
+  },
+  {
+    "Oper Day": "07/01/2025",
+    "Interval Ending": "1545",
+    "LZ_HOUSTON": "68.42",
+    "LZ_NORTH": "47.55",
+    "LZ_SOUTH": "36.25",
+    "LZ_WEST": "44.71"
+  }
+]
