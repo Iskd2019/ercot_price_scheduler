@@ -23,7 +23,8 @@ stop_event = Event()
 scripts = [
     "update_rtd_forecast_live.py",
     "update_daily_dam_price.py",
-    "update_daily_15_mins_energy_price.py"
+    "update_daily_15_mins_energy_price.py",
+    "update_latest_lmp_5min.py"
 
 ]
 # 脚本执行函数（增加超时控制）
@@ -59,7 +60,7 @@ def run_all_scripts():
 # APScheduler 启动逻辑
 def start_scheduler():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(run_all_scripts, 'interval', minutes=5, max_instances=1)
+    scheduler.add_job(run_all_scripts, 'interval', minutes=1, max_instances=1)
     scheduler.start()
 
     logging.info("🟢 定时任务已启动，每5分钟运行一次所有脚本")
