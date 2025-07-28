@@ -1,6 +1,7 @@
 import requests, zipfile, io, pandas as pd
 import psycopg2
 from datetime import datetime
+from datetime import timedelta
 
 # --- CONFIGURATION ---
 METADATA_URL = "https://www.ercot.com/misapp/servlets/IceDocListJsonWS?reportTypeId=12300"
@@ -70,3 +71,119 @@ try:
     print(f"✅ 已成功插入 {len(df)} 条记录至 {TABLE_NAME}")
 except Exception as e:
     print(f"❌ 数据库写入失败: {e}")
+
+#写入MQTT
+import psycopg2
+import json
+import paho.mqtt.client as mqtt
+
+# --- MQTT 设置 ---
+MQTT_HOST = "10.10.112.130"
+MQTT_PORT = 1883
+MQTT_USER = "mqttusr3"
+MQTT_PASS = "uu56890CCE#218"
+
+# --- 数据库配置 ---
+DB_CONFIG = {
+    'dbname': 'power',
+    'user': 'odoo',
+    'password': 'odoo123',
+    'host': '10.10.112.106',
+    'port': '5432'
+}
+
+# 建立数据库连接
+conn = psycopg2.connect(**DB_CONFIG)
+cur = conn.cursor()
+
+# 获取最新一笔（四个结算点）数据
+cur.execute("""
+    SELECT sced_timestamp + interval '5 hour' AS time, settlement_point, lmp
+    FROM daily_energy_price_5min
+    WHERE sced_timestamp = (SELECT MAX(sced_timestamp) FROM daily_energy_price_5min)
+""")
+rows = cur.fetchall()
+
+
+# 构造 JSON payload
+latest_5min = {"timestamp": None}
+for ts, point, lmp in rows:
+    adjusted_ts = ts - timedelta(hours=5)
+    latest_5min["timestamp"] = adjusted_ts.strftime('%Y-%m-%d %H:%M:%S')
+    latest_5min[f"{point}"] = float(round(lmp, 2))
+
+# 发送到 PWR/ERCOTLMP
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="publisher_lmp_5min", protocol=mqtt.MQTTv5)
+client.username_pw_set(MQTT_USER, MQTT_PASS)
+client.connect(MQTT_HOST, MQTT_PORT, 60)
+client.publish("PWR/ERCOTLMP", json.dumps(latest_5min), qos=1, retain=True)
+client.disconnect()
+
+print(f"✅ 最新 5 分钟 LMP 已发送: {latest_5min}")
+
+# 使用你写的 SQL 查询最新15分钟 LMP 均值
+cur.execute("""
+WITH latest_ts AS (
+  SELECT MAX(sced_timestamp) AS latest_time FROM daily_energy_price_5min
+),
+lookback AS (
+  SELECT
+    latest_time,
+    CASE
+      WHEN EXTRACT(MINUTE FROM latest_time) % 15 BETWEEN 1 AND 4 THEN 3
+      WHEN EXTRACT(MINUTE FROM latest_time) % 15 BETWEEN 5 AND 9 THEN 1
+      WHEN EXTRACT(MINUTE FROM latest_time) % 15 BETWEEN 10 AND 14 THEN 2
+      ELSE 3
+    END AS num_points
+  FROM latest_ts
+),
+recent_times AS (
+  SELECT sced_timestamp
+  FROM lookback,
+       LATERAL (
+         SELECT DISTINCT sced_timestamp
+         FROM daily_energy_price_5min
+         ORDER BY sced_timestamp DESC
+         LIMIT lookback.num_points
+       ) AS recent
+),
+base_data AS (
+  SELECT p.*
+  FROM daily_energy_price_5min p
+  JOIN recent_times r ON p.sced_timestamp = r.sced_timestamp
+),
+avg_lmp AS (
+  SELECT
+    settlement_point,
+    ROUND(AVG(lmp), 2) AS avg_lmp
+  FROM base_data
+  GROUP BY settlement_point
+)
+SELECT
+  MAX(b.sced_timestamp) + interval '5 hour' AS time,
+  b.settlement_point,
+  a.avg_lmp
+FROM base_data b
+JOIN avg_lmp a
+  ON b.settlement_point = a.settlement_point
+GROUP BY b.settlement_point, a.avg_lmp
+""")
+
+rows = cur.fetchall()
+
+# 构造 JSON payload
+lmp_15min = {"timestamp": None}
+for ts, point, avg in rows:
+    adjusted_ts = ts - timedelta(hours=5)
+    lmp_15min["timestamp"] = adjusted_ts.strftime('%Y-%m-%d %H:%M:%S')
+    lmp_15min[f"{point}15"] = float(avg)
+
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="publisher_lmp_15min", protocol=mqtt.MQTTv5)
+client.username_pw_set(MQTT_USER, MQTT_PASS)
+client.connect(MQTT_HOST, MQTT_PORT, 60)
+client.publish("PWR/ERCOTLMP15", json.dumps(lmp_15min), qos=1,retain=True)
+client.disconnect()
+
+print(f"✅ 最新 15 分钟 LMP 均值已发送: {lmp_15min}")
+cur.close()
+conn.close()

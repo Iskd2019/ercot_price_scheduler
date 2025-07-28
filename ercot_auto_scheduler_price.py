@@ -60,7 +60,7 @@ def run_all_scripts():
 # APScheduler 启动逻辑
 def start_scheduler():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(run_all_scripts, 'interval', minutes=1, max_instances=1)
+    scheduler.add_job(run_all_scripts, 'interval', minutes=5, max_instances=1)
     scheduler.start()
 
     logging.info("🟢 定时任务已启动，每5分钟运行一次所有脚本")

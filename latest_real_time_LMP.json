@@ -1,22 +1,22 @@
 [
   {
     "SettlementPoint": "LZ_HOUSTON",
-    "LMP": 53.73,
-    "SCEDTimestamp": "07/01/2025 11:50:11"
+    "LMP": 57.91,
+    "SCEDTimestamp": "07/25/2025 16:45:11"
   },
   {
     "SettlementPoint": "LZ_NORTH",
-    "LMP": 42.03,
-    "SCEDTimestamp": "07/01/2025 11:50:11"
+    "LMP": 60.7,
+    "SCEDTimestamp": "07/25/2025 16:45:11"
   },
   {
     "SettlementPoint": "LZ_SOUTH",
-    "LMP": 35.01,
-    "SCEDTimestamp": "07/01/2025 11:50:11"
+    "LMP": 55.68,
+    "SCEDTimestamp": "07/25/2025 16:45:11"
   },
   {
     "SettlementPoint": "LZ_WEST",
-    "LMP": 40.05,
-    "SCEDTimestamp": "07/01/2025 11:50:11"
+    "LMP": 102.69,
+    "SCEDTimestamp": "07/25/2025 16:45:11"
   }
 ]

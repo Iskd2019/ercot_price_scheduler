@@ -16,7 +16,6 @@ metadata = response.json()
 latest_doc = metadata["ListDocsByRptTypeRes"]["DocumentList"][0]["Document"]
 doc_id = latest_doc["DocID"]
 rtd_timestamp = latest_doc["PublishDate"]
-
 # Step 2: Build download URL and fetch ZIP
 zip_url = f"https://www.ercot.com/misdownload/servlets/mirDownload?doclookupId={doc_id}"
 zip_response = requests.get(zip_url, headers=HEADERS)

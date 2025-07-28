@@ -83,3 +83,38 @@ conn.commit()
 cursor.close()
 conn.close()
 print(f"✅ Inserted {inserted} records into daily_energy_price.")
+
+"""
+# --- Step 5: Publish the latest data point to MQTT ---
+import paho.mqtt.client as mqtt
+import json
+
+if data_rows:
+    last_row = data_rows[-1]
+    try:
+        oper_day = datetime.strptime(last_row[op_day_idx], '%m/%d/%Y').date()
+        interval_time = datetime.strptime(last_row[interval_idx], '%H%M').time()
+        timestamp = datetime.combine(oper_day, interval_time).strftime('%Y-%m-%d %H:%M:%S')
+
+        payload = {
+            "timestamp": timestamp,
+            "LZ_HOUSTON15": float(last_row[houston_idx]),
+            "LZ_NORTH15": float(last_row[north_idx]),
+            "LZ_SOUTH15": float(last_row[south_idx]),
+            "LZ_WEST15": float(last_row[west_idx])
+        }
+
+        print(f"📤 Pushing latest data to MQTT: {payload}")
+
+        client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="publisher_15min", protocol=mqtt.MQTTv5)
+        client.username_pw_set("mqttusr3", "uu56890CCE#218")
+        client.connect("10.10.112.130", 1883, 60)
+        client.publish("PWR/ERCOTLMP15", payload=json.dumps(payload), qos=1, retain=True)
+        client.disconnect()
+
+        print("✅ Latest 15-min price pushed to MQTT topic PWR/ERCOTLMP15")
+    except Exception as e:
+        print(f"❌ Failed to publish MQTT message: {e}")
+else:
+    print("⚠️ No data row available to push to MQTT.")
+"""
