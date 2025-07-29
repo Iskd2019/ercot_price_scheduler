@@ -82,3 +82,44 @@ try:
 except Exception as e:
     print(f"❌ Failed to insert into DB: {e}")
     exit(1)
+
+# --- STEP 5: Calculate Future 60-min Average and Send to MQTT ---
+import paho.mqtt.client as mqtt
+import json
+from datetime import timedelta
+
+MQTT_HOST = "10.10.112.130"
+MQTT_PORT = 1883
+MQTT_USER = "mqttusr3"
+MQTT_PASS = "uu56890CCE#218"
+
+# 保留最晚的 IntervalEnding 时间
+latest_ts = filtered_df["IntervalEnding"].max()
+end_time = latest_ts
+start_time = end_time - timedelta(minutes=60)
+
+# 过滤出最后一小时的数据
+next_60_df = filtered_df[
+    (filtered_df["IntervalEnding"] > start_time) &
+    (filtered_df["IntervalEnding"] <= end_time)
+]
+
+# 按结算点计算平均值
+avg_lmp = next_60_df.groupby("SettlementPoint")["LMP"].mean().round(2).to_dict()
+
+# 构造 JSON payload
+payload = {"timestamp": latest_ts.strftime('%Y-%m-%d %H:%M:%S')}
+for zone in TARGET_ZONES:
+    payload[f"{zone}_NEXT60"] = avg_lmp.get(zone, None)
+
+# 打印检查
+print("📡 即将发布的未来60分钟电价:")
+print(payload)
+
+# 发送 MQTT
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="publisher_lmp_future", protocol=mqtt.MQTTv5)
+client.username_pw_set(MQTT_USER, MQTT_PASS)
+client.connect(MQTT_HOST, MQTT_PORT, 60)
+client.publish("PWR/LMP60FUTURE", json.dumps(payload), qos=1, retain=True)
+client.disconnect()
+print("✅ MQTT 发布成功：PWR/LMP60FUTURE")
