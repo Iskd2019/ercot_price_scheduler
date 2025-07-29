@@ -113,13 +113,13 @@ for zone in TARGET_ZONES:
     payload[f"{zone}_NEXT60"] = avg_lmp.get(zone, None)
 
 # 打印检查
-print("📡 即将发布的未来60分钟电价:")
+print("📡 即将发布的未来60分钟平均电价:")
 print(payload)
 
 # 发送 MQTT
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2, client_id="publisher_lmp_future", protocol=mqtt.MQTTv5)
 client.username_pw_set(MQTT_USER, MQTT_PASS)
 client.connect(MQTT_HOST, MQTT_PORT, 60)
-client.publish("PWR/LMP60FUTURE", json.dumps(payload), qos=1, retain=True)
+client.publish("PWR/LMP60FUTUREAVG", json.dumps(payload), qos=1, retain=True)
 client.disconnect()
-print("✅ MQTT 发布成功：PWR/LMP60FUTURE")
+print("✅ MQTT 发布成功：PWR/LMP60FUTUREAVG")
